@@ -8,7 +8,8 @@ export default {
       },
       colors: {
         'header-brown': '#424242',
-        'header-yelow': '#efc863'
+        'header-yelow': '#efc863',
+        'footer-background': '#e8e8e8'
       }
     }
   },

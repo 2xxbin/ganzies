@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="app">
+  <div>
     <header>
       <div class="w-full h-20 flex flex-[10]">
         <div class="flex flex-[3.5] bg-header-brown">
@@ -26,7 +26,7 @@ export default defineComponent({
           </div>
         </div>
         <div class="flex flex-[6.5] justify-end">
-          <div class="flex w-1/3 h-full justify-between items-center mr-24">
+          <div class="flex w-1/3 h-full justify-between items-center mr-20">
             <router-link
               class="font-notoSans no-underline text-black hover:text-header-yelow transition-colors ease-in-out"
               v-for="page in pages"
@@ -39,5 +39,25 @@ export default defineComponent({
       </div>
     </header>
     <router-view></router-view>
+    <footer class="w-full h-48 relative translate-y-0">
+      <hr class="bg-footer-background w-5/6 h-[5px] border-0" />
+      <div class="w-full h-full pt-8 flex justify-center">
+        <p class="font-notoSans font-medium">ⓒ 2024. 2xxbin. All rights reserved.</p>
+      </div>
+      <div class="grid grid-cols-3"></div>
+    </footer>
   </div>
 </template>
+
+<!-- <style>
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 100px;
+  padding-right: 2px;
+}
+</style> -->
