@@ -2,7 +2,15 @@
 export default {
   content: ['index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        notoSans: ['Noto Sans KR', 'sans-serif']
+      },
+      colors: {
+        'header-brown': '#424242',
+        'header-yelow': '#efc863'
+      }
+    }
   },
   plugins: []
 }
