@@ -28,6 +28,11 @@ export default defineComponent({
     ></banner>
   </div>
   <div class="pt-16 w-full h-auto min-h-screen pb-48">
-    <div class="px-24"><h1 class="font-notoSans font-bold text-4xl">업데이트</h1></div>
+    <div class="px-24">
+      <h1 class="font-notoSans font-bold text-4xl">업데이트</h1>
+      <div class="grid grid-cols-2 pt-14 mx-24 bg-blue-500">
+        <div>a</div>
+      </div>
+    </div>
   </div>
 </template>

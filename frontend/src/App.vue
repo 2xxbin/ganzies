@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
+  <div class="font-notoSans">
     <header>
       <div class="w-full h-20 flex flex-[10]">
         <div class="flex flex-[3.5] bg-header-brown">
@@ -42,9 +42,8 @@ export default defineComponent({
     <footer class="w-full h-48 relative translate-y-0">
       <hr class="bg-footer-background w-5/6 h-[5px] border-0" />
       <div class="w-full h-full pt-8 flex justify-center">
-        <p class="font-notoSans font-medium">ⓒ 2024. 2xxbin. All rights reserved.</p>
+        <p class="font-medium">ⓒ 2024. 2xxbin. All rights reserved.</p>
       </div>
-      <div class="grid grid-cols-3"></div>
     </footer>
   </div>
 </template>
