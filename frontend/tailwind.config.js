@@ -9,7 +9,8 @@ export default {
       colors: {
         'header-brown': '#424242',
         'header-yelow': '#efc863',
-        'footer-background': '#e8e8e8'
+        'footer-background': '#e8e8e8',
+        'subtitle-text': '#8F8F8F'
       }
     }
   },

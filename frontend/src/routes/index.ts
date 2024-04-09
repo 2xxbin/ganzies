@@ -10,6 +10,11 @@ const routes = [
     path: '/eula',
     name: 'Eula',
     component: () => import('@/pages/Eula.vue')
+  },
+  {
+    path: '/download',
+    name: 'download',
+    component: () => import('@/pages/Download.vue')
   }
 ]
 

@@ -6,6 +6,13 @@ export default defineComponent({
   name: 'ContentsComponent',
   components: {
     banner
+  },
+  props: {
+    isMarginBottom: {
+      type: Boolean,
+      required: false,
+      default: true
+    }
   }
 })
 </script>
@@ -17,8 +24,8 @@ export default defineComponent({
     </template>
     <template v-slot:right><slot name="banner-right"></slot></template
   ></banner>
-  <div class="pt-16 w-full h-auto min-h-[100%] pb-48">
-    <div class="px-12 sm:px-24 xl:px-40">
+  <div class="w-full h-auto min-h-[100%]" :class="isMarginBottom ? 'pt-16' : ''">
+    <div class="px-6 sm:px-24 xl:px-40">
       <slot name="contents"></slot>
     </div>
   </div>
