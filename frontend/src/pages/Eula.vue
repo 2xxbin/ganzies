@@ -3,9 +3,17 @@ import { defineComponent } from 'vue'
 import contents from '@/components/Contents.vue'
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'EulaPage',
   components: {
     contents
+  },
+  data() {
+    return {
+      charaters: [
+        { id: 'potg', eng_name: 'potg', url: 'https://source.unsplash.com/random/1109x384' },
+        { id: 'kong', eng_name: 'kong', url: 'https://source.unsplash.com/random/1109x384' }
+      ]
+    }
   }
 })
 </script>
@@ -21,7 +29,10 @@ export default defineComponent({
         </p>
       </div></template
     >
-    <template v-slot:banner-right><div class="w-full h-full bg-blue-200"></div></template>
+    <template v-slot:banner-right
+      ><div class="relative w-full h-full">
+        <img src="https://source.unsplash.com/random/400x200" alt="banner" class="w-full h-full object-cover" /></div
+    ></template>
     <template v-slot:contents>
       <h1 class="font-notoSans font-bold text-4xl">업데이트</h1>
       <div class="grid grid-cols-2 mt-10 aspect-[1.5/1] gap-4 lg:gap-6">

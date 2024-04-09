@@ -19,14 +19,14 @@ export default defineComponent({
 <template>
   <div class="font-notoSans">
     <header>
-      <div class="w-full h-20 flex flex-[10]">
+      <div class="w-full h-20 flex flex-[10] flex-col sm:flex-row">
         <div class="flex flex-[3.5] bg-header-brown">
           <div class="w-full h-full flex items-center ml-6">
             <h1 class="font-notoSans font-bold text-3xl text-header-yelow">GANZIES</h1>
           </div>
         </div>
         <div class="flex flex-[6.5] justify-end">
-          <div class="flex w-1/3 h-full justify-between items-center mr-20">
+          <div class="flex w-full sm:w-2/3 lg:w-1/3 h-full justify-between items-center mr-20 ml-20">
             <router-link
               class="font-notoSans no-underline text-black hover:text-header-yelow transition-colors ease-in-out"
               v-for="page in pages"
@@ -42,7 +42,7 @@ export default defineComponent({
     <footer class="w-full h-48 relative translate-y-0">
       <hr class="bg-footer-background w-5/6 h-[5px] border-0" />
       <div class="w-full h-full pt-8 flex justify-center">
-        <p class="font-medium">ⓒ 2024. 2xxbin. All rights reserved.</p>
+        <p class="font-medium">ⓒ 2024. 2xxbin, Duckchild. All rights reserved.</p>
       </div>
     </footer>
   </div>
