@@ -26,12 +26,18 @@ export default defineComponent({
         downloads: [
           {
             title: '콩쥐 1.0 다운로드',
-            link_text: 'KONG 1.0 DOWNLOAD (Converted)',
+            link: 'https://drive.google.com/...'
+          },
+          {
+            title: 'KONG 1.0 DOWNLOAD (Converted)',
             link: 'https://drive.google.com/...'
           },
           {
             title: '콩쥐 2.0 다운로드',
-            link_text: 'KONG 2.0 DOWNLOAD (Converted)',
+            link: 'https://drive.google.com/...'
+          },
+          {
+            title: 'KONG 2.0 DOWNLOAD (Converted)',
             link: 'https://drive.google.com/...'
           }
         ],
@@ -117,9 +123,7 @@ export default defineComponent({
             <h2 class="font-bold text-2xl">다운로드</h2>
             <div class="mt-8 text-center">
               <div class="mb-8" v-for="downloadLink in characterData.downloads" :key="downloadLink.link">
-                <a class="mb-4 no-underline text-white font-medium" :href="downloadLink.link">{{ downloadLink.title }}</a
-                ><br />
-                <a class="no-underline text-white font-medium" :href="downloadLink.link">{{ downloadLink.link_text }}</a>
+                <a class="mb-4 no-underline text-white font-medium" :href="downloadLink.link">{{ downloadLink.title }}</a>
               </div>
             </div>
           </div>
