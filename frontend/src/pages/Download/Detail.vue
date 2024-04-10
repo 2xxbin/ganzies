@@ -1,12 +1,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import contents from '@/components/Contents.vue'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
   name: 'DownloadDetailPage',
-  components: { contents, Carousel, Slide, Pagination, Navigation },
+  components: { contents },
   data() {
     return {
       characterId: this.$route.params.id,
