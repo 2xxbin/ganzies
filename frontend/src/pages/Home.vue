@@ -24,10 +24,10 @@ export default defineComponent({
     <template v-slot:banner-right><div class="w-full h-full bg-blue-200"></div></template>
     <template v-slot:contents>
       <h1 class="font-notoSans font-bold text-4xl">업데이트</h1>
-      <div class="grid grid-cols-2 mt-10 aspect-[1.5/1] gap-2 lg:gap-6">
+      <div class="grid grid-flow-col grid-cols-2 mt-10 aspect-[1.5/1] gap-2 lg:gap-6">
         <div class="bg-blue-500"></div>
-        <div class="bg-red-500 row-span-2"></div>
         <div class="bg-blue-300"></div>
+        <div class="bg-red-500 row-span-2"></div>
       </div>
     </template>
   </contents>

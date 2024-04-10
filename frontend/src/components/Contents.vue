@@ -24,8 +24,8 @@ export default defineComponent({
     </template>
     <template v-slot:right><slot name="banner-right"></slot></template
   ></banner>
-  <div class="w-full h-auto min-h-[100%]" :class="isMarginBottom ? 'pt-16' : ''">
-    <div class="px-6 sm:px-24 xl:px-40">
+  <div class="w-full h-auto min-h-[100%]" :class="isMarginBottom ? 'mt-16' : ''">
+    <div class="px-6 lg:px-12 xl:px-40">
       <slot name="contents"></slot>
     </div>
   </div>

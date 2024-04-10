@@ -14,7 +14,12 @@ const routes = [
   {
     path: '/download',
     name: 'download',
-    component: () => import('@/pages/Download.vue')
+    component: () => import('@/pages/Download/Download.vue')
+  },
+  {
+    path: '/download/:id',
+    name: 'downloadDetail',
+    component: () => import('@/pages/Download/Detail.vue')
   }
 ]
 
