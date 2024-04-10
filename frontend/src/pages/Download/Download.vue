@@ -17,7 +17,7 @@ export default defineComponent({
         { koreanName: '유주', englishName: 'yuju', id: 'yuju' },
         { koreanName: '양울', englishName: 'yangwool', id: 'yangwool' },
         { koreanName: '키이', englishName: 'kii', id: 'kii' },
-        { koreanName: '킨', englishName: 'kin', id: 'kin' },
+        { koreanName: '폰드8', englishName: 'pond8', id: 'pond' },
         { koreanName: '빈', englishName: 'bin', id: 'bin' },
         { koreanName: '민우', englishName: 'minwoo', id: 'minwoo' }
       ]
