@@ -10,7 +10,7 @@ export default defineComponent({
   data() {
     return {
       photos: [
-        'https://source.unsplash.com/random/400x300',
+        '/src/assets/sub-banner1.png',
         'https://source.unsplash.com/random/400x300',
         'https://source.unsplash.com/random/400x300',
         'https://source.unsplash.com/random/400x300',
@@ -41,7 +41,7 @@ export default defineComponent({
     <template v-slot:contents>
       <h1 class="font-bold text-4xl mb-8">갤러리</h1>
       <div class="w-full grid max-sm:grid-cols-2 grid-cols-4 gap-4">
-        <div v-for="photo in photos" :key="photo" class="bg-gray-300 bg-cover bg-no-repeat w-full h-full" :class="`bg-[url('${photo}')]`">
+        <div v-for="photo in photos" :key="photo" class="bg-gray-300 bg-cover bg-no-repeat w-full h-full">
           <img class="w-full h-full" :alt="photo" :src="photo" />
         </div>
       </div>
