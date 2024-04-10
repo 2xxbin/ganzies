@@ -71,7 +71,7 @@ export default defineComponent({
           <Pagination />
         </template>
       </Carousel>
-      <h1 class="font-bold text-4xl mb-8">캐릭터 별 특수 이용 규약</h1>
+      <h1 class="font-bold text-4xl my-8">캐릭터 별 특수 이용 규약</h1>
       <Carousel>
         <Slide v-for="characterEula in characterEulas" :key="characterEula.characterName">
           <div class="w-full">
